@@ -1,0 +1,25 @@
+.cursor{
+    width: 2rem;
+    height: 2rem;
+    border: .15rem solid #ffffff;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 9999;
+    transform: translate(-50%, -50%);
+    transform-origin: 100% 100%;
+    pointer-events: none;
+    transition: all .1s;
+}
+
+
+.cursor-nav{
+    transform: scale(2);
+    background: #ffffff;
+    mix-blend-mode: difference;
+}
+
+.cursor-logo,
+.cursor-burger-btn{
+    transform: scale(2);
+    opacity: 0;
+}

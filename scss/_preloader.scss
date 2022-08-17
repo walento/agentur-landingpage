@@ -1,0 +1,18 @@
+.preloader{
+    background: #000000 url(../img/preloader.gif) no-repeat center ;
+    background-size: 10%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    transition: all .5s ease-out;
+
+    &__logo{
+        width: 5rem;
+        height: fit-content;
+        margin: auto 0;
+        padding-bottom: 10rem;
+    }
+}
