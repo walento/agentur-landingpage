@@ -1,0 +1,51 @@
+.scroll-buttons{
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.btn_top,
+.btn_bottom{
+
+    padding: .75rem 1.5rem;
+    margin: 2rem 1rem;
+    cursor: pointer;
+
+    .arrow{
+        border: solid rgba($color: #ffffff, $alpha: .2);
+        border-width: 0 .15rem .15rem 0;
+        display: inline-block;
+        padding: .5rem;
+        transition: .1s;
+    }
+    
+    &:hover{
+        .arrow{
+            border: solid #ffffff;
+            border-width: 0 .15rem .15rem 0;
+        }
+    }
+}
+
+.btn_top{
+
+    left: calc(50% - 3rem);
+    padding-right: .75rem;
+
+    .arrow{
+    transform: rotate(-135deg) translateY(-.5rem);
+    }
+
+}
+
+.btn_bottom{
+
+    left: calc(50% + 3rem);
+    padding-left: .75rem;
+
+    .arrow{
+    transform: rotate(45deg) translateY(-.5rem);
+    }
+}

@@ -1,0 +1,23 @@
+.heading-container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+h1{
+    font-family: 'Tourney', cursive;
+    font-size: 3rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+    text-transform: uppercase;
+}
+
+.heading-main{
+    font-weight: 900;
+}
+
+.heading{
+    font-weight: 100;
+    display: none;
+}

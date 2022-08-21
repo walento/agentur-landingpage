@@ -38,8 +38,7 @@
   mix-blend-mode: difference;
 }
 
-.cursor-logo,
-.cursor-burger-btn {
+.cursor-dissapear {
   transform: scale(2);
   opacity: 0;
 }
@@ -56,6 +55,10 @@ a {
 
 ul {
   list-style: none;
+}
+
+body::-webkit-scrollbar {
+  display: none;
 }
 
 .header {
@@ -83,6 +86,10 @@ ul {
   height: 3.5rem;
   margin: 1rem 0.5rem;
   padding: 1rem;
+  transition: 0.1s;
+}
+.header__logo:hover {
+  transform: scale(1.2);
 }
 
 .burger-btn {
@@ -91,6 +98,10 @@ ul {
   height: 3.5rem;
   width: 3.5rem;
   cursor: pointer;
+  transition: 0.1s;
+}
+.burger-btn:hover {
+  transform: scale(1.2);
 }
 .burger-btn div {
   width: 1.5rem;
@@ -161,7 +172,137 @@ ul {
 section {
   width: 100%;
   height: 100vh;
-  background: purple;
   color: #ffffff;
-  padding: 0 3rem;
+  background: #000;
+  padding: 0 1.5rem;
+}
+
+.section1 {
+  background: url(../img/earth.jpg);
+  background-position: center;
+}
+
+.section2 {
+  background: url(../img/office.jpg);
+  background-position: bottom;
+}
+
+.section3 {
+  background: url(../img/subway.jpg);
+  background-position: center;
+}
+
+.section4 {
+  background: url(../img/liquid.jpg);
+  background-position: center;
+}
+
+.section5 {
+  background: url(../img/lightray.jpg);
+  background-position: center;
+}
+
+.section6 {
+  background: url(../img/transparent.jpg);
+  background-position: center;
+}
+
+.section7 {
+  background: url(../img/barber.jpg);
+  background-position: center;
+}
+
+.section8 {
+  background: url(../img/neongirl.jpg);
+  background-position: center;
+}
+
+.scroll-buttons {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.btn_top,
+.btn_bottom {
+  padding: 0.75rem 1.5rem;
+  margin: 2rem 1rem;
+  cursor: pointer;
+}
+.btn_top .arrow,
+.btn_bottom .arrow {
+  border: solid rgba(255, 255, 255, 0.2);
+  border-width: 0 0.15rem 0.15rem 0;
+  display: inline-block;
+  padding: 0.5rem;
+  transition: 0.1s;
+}
+.btn_top:hover .arrow,
+.btn_bottom:hover .arrow {
+  border: solid #ffffff;
+  border-width: 0 0.15rem 0.15rem 0;
+}
+
+.btn_top {
+  left: calc(50% - 3rem);
+  padding-right: 0.75rem;
+}
+.btn_top .arrow {
+  transform: rotate(-135deg) translateY(-0.5rem);
+}
+
+.btn_bottom {
+  left: calc(50% + 3rem);
+  padding-left: 0.75rem;
+}
+.btn_bottom .arrow {
+  transform: rotate(45deg) translateY(-0.5rem);
+}
+
+.heading-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+h1 {
+  font-family: "Tourney", cursive;
+  font-size: 3rem;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+  text-transform: uppercase;
+}
+
+.heading-main {
+  font-weight: 900;
+}
+
+.heading {
+  font-weight: 100;
+  display: none;
+}
+
+.footer {
+  width: 100%;
+  height: 3rem;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: right;
+}
+.footer .footer-link {
+  color: rgba(255, 255, 255, 0.4);
+  margin-right: 1.5rem;
+  padding: 1rem;
+  font-family: "Tourney", cursive;
+  font-weight: 100;
+  transition: 0.1s;
+}
+.footer .footer-link:hover {
+  font-weight: 900;
+  color: #ffffff;
 }/*# sourceMappingURL=styles.css.map */
