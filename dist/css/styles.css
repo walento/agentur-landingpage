@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Tourney:wght@100;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jura:wght@400;700&family=Major+Mono+Display&family=Tourney:wght@100;900&display=swap");
 .preloader {
   background: #000000 url(../img/preloader.gif) no-repeat center;
   background-size: 10%;
@@ -175,11 +175,15 @@ section {
   color: #ffffff;
   background: #000;
   padding: 0 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .section1 {
   background: url(../img/earth.jpg);
-  background-position: center;
+  background-position: top;
 }
 
 .section2 {
@@ -228,7 +232,7 @@ section {
 .btn_top,
 .btn_bottom {
   padding: 0.75rem 1.5rem;
-  margin: 2rem 1rem;
+  margin: 5rem 1rem;
   cursor: pointer;
 }
 .btn_top .arrow,
@@ -261,19 +265,12 @@ section {
   transform: rotate(45deg) translateY(-0.5rem);
 }
 
-.heading-container {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-}
-
 h1 {
   font-family: "Tourney", cursive;
-  font-size: 3rem;
+  font-size: 2.5rem;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
   text-transform: uppercase;
+  text-align: center;
 }
 
 .heading-main {
@@ -287,17 +284,19 @@ h1 {
 
 .footer {
   width: 100%;
-  height: 3rem;
+  height: 4rem;
   position: fixed;
   bottom: 0;
   left: 0;
   display: flex;
-  justify-content: right;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .footer .footer-link {
   color: rgba(255, 255, 255, 0.4);
-  margin-right: 1.5rem;
-  padding: 1rem;
+  padding: 0 0.5rem;
+  padding-top: 0.5rem;
   font-family: "Tourney", cursive;
   font-weight: 100;
   transition: 0.1s;
@@ -305,4 +304,13 @@ h1 {
 .footer .footer-link:hover {
   font-weight: 900;
   color: #ffffff;
+}
+
+.text {
+  font-family: "Jura", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 300;
+  text-align: center;
+  padding: 3rem 1.5rem;
+  text-shadow: 2px 2px 5px rgb(0, 0, 0);
 }/*# sourceMappingURL=styles.css.map */
