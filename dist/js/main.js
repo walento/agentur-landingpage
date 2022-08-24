@@ -113,7 +113,7 @@ function toggleNav() {
 }
 
 
-// full page scroll animation 
+// full page scroll animation with jquery
 let clickCountPlus = 1;
 let clickCountMinus = clickCountPlus - 1;
 
